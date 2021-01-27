@@ -2,6 +2,7 @@
   (:require
    [re-frame.core :as re-frame]
    [goog.string :as gstring]
+   [cljs.pprint]
    [form-validation-example.domain :as domain]
    [form-validation-example.subs :as subs]
    [form-validation-example.events :as events]
