@@ -7,6 +7,7 @@ This repository shows the example of the form design with clojure's spec for val
 The base architecture is based on the re-frame template.
 But I introduce two mandatory components (files).
 
+this repository's deployment is on github pages https://mokkemeguru.github.io/form-validation-example/
 ## domain
 
 _domain_ means data's spec. So, if you wanna implement the email form, you should write the email's acceptable regular expression into this component.
