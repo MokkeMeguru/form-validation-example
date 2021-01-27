@@ -1,6 +1,5 @@
-!/resources/public/js/compiled/app.js
 /out/
-/resources/public/js/compiled/
+/resources/public/js/compiled/*
 /target/
 /*-init.clj
 /*.log
@@ -16,3 +15,5 @@
 /shadow-cljs.edn
 /.shadow-cljs/
 /.dir-locals.el
+
+# !/resources/public/js/compiled/app.js
