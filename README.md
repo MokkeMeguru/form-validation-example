@@ -29,3 +29,16 @@ _valid_ component depends on _domain_ component.
 We want to separate the form's validation and the view because of to avoid the complexity of the view (some frameworks like react often cause this problem.).
 
 So that, I propose we should implement error validations in this component.
+
+example is in the `src/cljs/form_validation_example/valids.cljs`
+
+```clojure
+(defn email-is-valid? [email]
+  (when-not (empty? email)
+    (when-let [problems (s/explain-data ::domain/email email)]
+      (let [via (-> problems :cljs.spec.alpha/problems first :via reverse first)]
+        (cond
+          (= via ::domain/email) "不正なメールアドレスです。"
+          :else "不明なエラーです。別のアドレスを入力してください。")))))
+
+```
